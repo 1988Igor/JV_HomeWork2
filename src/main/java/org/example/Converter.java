@@ -1,4 +1,5 @@
 package org.example;
+
 //ООП:
 //1)Напишите интерфейс Converter для конвертации из градусов по Цельсию в
 //Кельвины, Фаренгейты. У классов наследников необходимо переопределить метод интерфейса,
@@ -16,17 +17,13 @@ class CelsiusConverter implements Converter {
 }
 
 class KelvinConverter implements Converter {
-
     @Override
     public double getConvertedElement(double element) {
         return element + 273.15;
     }
-
-
 }
 
 class FahrenheitConverter implements Converter {
-
     @Override
     public double getConvertedElement(double element) {
         return element + 32;

@@ -15,6 +15,5 @@ public class Task6 {
             if (arr[i] < 0) arr[i] = sum;
             System.out.print(arr[i] + " ");
         }
-
     }
 }

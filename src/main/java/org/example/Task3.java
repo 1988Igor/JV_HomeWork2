@@ -8,13 +8,11 @@ import static java.lang.System.out;
 
 //3) Дана последовательность N целых чисел. Найти сумму простых чисел.
 public class Task3 {
-
     public static void main(String[] args) {
         out.println(findPrimeNumbers(30));
     }
 
     private static List findPrimeNumbers(int n) {
-
         boolean[] primes = new boolean[n + 1];
         Arrays.fill(primes, true);
         int sum = 0;
@@ -29,14 +27,11 @@ public class Task3 {
         for (int i = 2; i <= n; i++) {
             if (primes[i])
                 primeNumbers.add(i);
-
             sum = primeNumbers.stream().mapToInt(Integer::intValue).sum();
-
         }
         System.out.println("Сумма простых чисел = " + sum);
         System.out.println("Список простых чисел: ");
         return primeNumbers;
-
 
     }
 
